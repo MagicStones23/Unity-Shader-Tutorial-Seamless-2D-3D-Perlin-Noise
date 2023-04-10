@@ -148,8 +148,7 @@ float dotC = dot(CP , c);
 float dotD = dot(DP , d);
 ```
 
-### Use uv coordinates to interpolate them
-
+### Use uv coordinates to interpolate them to get perlin noise value
 
 ```csharp
 float PerlinNoiseLerp(float l, float r, float t) {
@@ -162,4 +161,17 @@ float temp1 = PerlinNoiseLerp(dotB, dotC, uv.x);
 float noiseValue = PerlinNoiseLerp(temp0, temp1, uv.y);
 noiseValue = (noiseValue + 1.0) / 2.0;
 ```
+
+### Continuity
+
+### Take P1 and P2 for example
+
+![教程4](https://user-images.githubusercontent.com/129722386/231015654-e59d2483-a286-4153-996f-4e5a5efddc65.png)
+
+### UV of P1 is (0, 0.5), uv of P2 is (1, 0.5), noise value of P1 is determined by random vectors of A and B, and noise value of P2 is determined by random vectors of H and G, so as long as thier random vectors are equal, it can connect seamlessly
+
+![教程5](https://user-images.githubusercontent.com/129722386/231016877-24e25268-9247-48b4-be30-93421be9af3a.png)
+
+### FBM
+
 
