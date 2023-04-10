@@ -120,10 +120,46 @@ https://user-images.githubusercontent.com/129722386/231012716-a0de0721-5db4-4993
 
 ### Texture is 256x256, 16 blocks in total, 64x64 for each block
 
-### Find out UV coordinates of P
+### Find out uv coordinates of P
 
 ```csharp
 float2 uv;
 uv.x = (P.x - A.x) / (64 - 1);
 uv.y = (P.y - A.y) / (64 - 1);
 ```
+### a, b, c, d is random vector of Vertex A, B, C, D(Green vectors in above picture)
+
+### calculate 4 dot values
+
+```csharp
+float2 AP = P - A;
+float2 BP = P - B;
+float2 CP = P - C;
+float2 DP = P - D;
+
+AP /= 64;
+BP /= 64;
+CP /= 64;
+DP /= 64;
+
+float dotA = dot(AP , a);
+float dotB = dot(BP , b);
+float dotC = dot(CP , c);
+float dotD = dot(DP , d);
+```
+
+### Use uv coordinates to interpolate them
+
+
+```csharp
+float PerlinNoiseLerp(float l, float r, float t) {
+    t = ((6 * t - 15) * t + 10) * t * t * t;
+    return lerp(l, r, t);
+}
+
+float temp0 = PerlinNoiseLerp(dotA, dotD, uv.x);
+float temp1 = PerlinNoiseLerp(dotB, dotC, uv.x);
+float noiseValue = PerlinNoiseLerp(temp0, temp1, uv.y);
+noiseValue = (noiseValue + 1.0) / 2.0;
+```
+
