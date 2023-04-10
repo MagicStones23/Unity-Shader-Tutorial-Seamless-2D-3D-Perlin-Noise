@@ -28,7 +28,7 @@ Click SaveToDisk to save noise texture to disk
 
   Evolution
 
-Tip: 3D noise texture takes up a lot of memory and GPU resources, so it's best to create 3D noise at a resolution of no more than 256 (unless your graphic card is really good)
+Tip: 3D noise texture takes up a lot of memory and GPU resources, resolution should no more than 256 (unless your graphic card is really good)
 
 # Template
 
@@ -104,11 +104,11 @@ https://user-images.githubusercontent.com/129722386/231012716-a0de0721-5db4-4993
 
 ![教程0](https://user-images.githubusercontent.com/129722386/231013417-e5d6fb01-1418-44cc-9aee-6b1f274006e4.png)
 
-### split it into 16 blocks and 25 vertices
+### Split it into 16 blocks and 25 vertices
 
 ![教程1](https://user-images.githubusercontent.com/129722386/231013471-b6552a4a-7ac8-411d-a05b-e995c795ea1e.png)
 
-### assign a random vector to each vertex
+### Assign a random vector to each vertex
 
 ![教程2](https://user-images.githubusercontent.com/129722386/231013518-ff62fba1-eb66-4193-9391-5f5f6bb04c91.png)
 
@@ -129,7 +129,7 @@ uv.y = (P.y - A.y) / (64 - 1);
 ```
 ### a, b, c, d is random vector of Vertex A, B, C, D(Green vectors in above picture)
 
-### calculate 4 dot values
+### Calculate 4 dot values
 
 ```csharp
 float2 AP = P - A;
@@ -189,3 +189,15 @@ noiseValue = (noiseValue + 1.0) / 2.0;
 ### FBM = PerlinNoiseA + PerlinNoiseB * 0.5 + PerlinNoiseC * 0.25 ans so on, endup something like this
 
 ![教程9](https://user-images.githubusercontent.com/129722386/231017530-f96a6d95-d23a-41ed-a08f-0e0da4675298.png)
+
+### Congratulations, you've learned basic perlin noise!
+
+# My Social Media
+
+### Twitter : https://twitter.com/MagicStone23
+
+### YouTube : https://www.youtube.com/channel/UCBUXiYqkFy0g6V0mVH1kESw
+
+### zhihu : https://www.zhihu.com/people/shui-guai-76-84
+
+### Bilibili : https://space.bilibili.com/423191063?spm_id_from=333.1007.0.0
