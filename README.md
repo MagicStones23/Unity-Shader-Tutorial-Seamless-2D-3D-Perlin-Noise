@@ -92,4 +92,38 @@ https://user-images.githubusercontent.com/129722386/231012716-a0de0721-5db4-4993
 
 ![使用说明-3D FBM](https://user-images.githubusercontent.com/129722386/231013009-8b54b675-6efc-40f4-89f8-dd5373f28c9c.png)
 
+
+
+<br/><br/>
+
 # Unity-Shader-Tutorial-Seamless-2D-3D-Perlin-Noise
+
+# Algorithm
+
+### Let's take a look at a 256x256 perlin noise
+
+![教程0](https://user-images.githubusercontent.com/129722386/231013417-e5d6fb01-1418-44cc-9aee-6b1f274006e4.png)
+
+### split it into 16 blocks and 25 vertices
+
+![教程1](https://user-images.githubusercontent.com/129722386/231013471-b6552a4a-7ac8-411d-a05b-e995c795ea1e.png)
+
+### assign a random vector to each vertex
+
+![教程2](https://user-images.githubusercontent.com/129722386/231013518-ff62fba1-eb66-4193-9391-5f5f6bb04c91.png)
+
+### All pixels are calculated in the same way, so let's take pixel P for example
+
+### Find out P's block
+
+![教程3](https://user-images.githubusercontent.com/129722386/231013684-1e1ed922-f4f9-4467-98f8-7460e06c582f.png)
+
+### Texture is 256x256, 16 blocks in total, 64x64 for each block
+
+### Find out UV coordinates of P
+
+```csharp
+float2 uv;
+uv.x = (P.x - A.x) / (64 - 1);
+uv.y = (P.y - A.y) / (64 - 1);
+```
