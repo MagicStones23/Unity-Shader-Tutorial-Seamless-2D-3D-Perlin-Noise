@@ -42,11 +42,11 @@ Tip: 3D noise texture takes up a lot of memory and GPU resources, so it's best t
  
 ![使用说明-2D 四方连续](https://user-images.githubusercontent.com/129722386/231012485-7e3c7d0b-eb2f-4877-af10-c4773fc14e49.png)
 
-Enable RemapTo01, FbmIteration = 8
+### Enable RemapTo01, FbmIteration = 8
 
 ![使用说明-2D FBM](https://user-images.githubusercontent.com/129722386/231012581-ec6b5a2a-3f79-49e2-8efb-fe8cd3b50b90.png)
 
-Evolution, need assistance of C# script
+### Evolution, need assistance of C# script
 
 ```csharp
 public class PerlinNoise_Test_Evolution : MonoBehaviour {
@@ -77,5 +77,19 @@ public class PerlinNoise_Test_Evolution : MonoBehaviour {
 ```
 
 https://user-images.githubusercontent.com/129722386/231012716-a0de0721-5db4-4993-88a4-916499f48082.mp4
+
+### Default 3D
+
+![使用说明-默认3D](https://user-images.githubusercontent.com/129722386/231012847-e7e0a222-6134-45ef-9661-350bf3f6696e.png)
+
+### Disable/Enable Tilable
+
+![使用说明-3D 不连续](https://user-images.githubusercontent.com/129722386/231012917-c96f0809-ff07-490f-97c2-59d8bede43bb.png)
+
+![使用说明-3D 六方连续](https://user-images.githubusercontent.com/129722386/231012930-2c62d90c-5636-4ca5-8427-e7270c259d19.png)
+
+### Enable RemapTo01, FbmIteration = 8
+
+![使用说明-3D FBM](https://user-images.githubusercontent.com/129722386/231013009-8b54b675-6efc-40f4-89f8-dd5373f28c9c.png)
 
 # Unity-Shader-Tutorial-Seamless-2D-3D-Perlin-Noise
