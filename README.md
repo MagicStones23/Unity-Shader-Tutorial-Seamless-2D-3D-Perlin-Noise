@@ -174,4 +174,18 @@ noiseValue = (noiseValue + 1.0) / 2.0;
 
 ### FBM
 
+### PerlinNoiseA, frequency = 4
 
+![教程6](https://user-images.githubusercontent.com/129722386/231017200-5ddb29b8-c766-4bd9-846e-1e10013c2f14.png)
+
+### PerlinNoiseB, frequency = 8
+
+![教程7](https://user-images.githubusercontent.com/129722386/231017208-b02ef518-d006-4d3b-8ce1-72b2ccc10ac5.png)
+
+### PerlinNoiseC, frequency = 16
+
+![教程8](https://user-images.githubusercontent.com/129722386/231017213-60d911e1-64e9-4719-9a00-bbaecdba1612.png)
+
+### FBM = PerlinNoiseA + PerlinNoiseB * 0.5 + PerlinNoiseC * 0.25 ans so on, endup something like this
+
+![教程9](https://user-images.githubusercontent.com/129722386/231017530-f96a6d95-d23a-41ed-a08f-0e0da4675298.png)
