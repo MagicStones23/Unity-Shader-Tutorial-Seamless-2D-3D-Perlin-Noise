@@ -1,3 +1,5 @@
+![文章封面](https://user-images.githubusercontent.com/129722386/231019769-f78e1b2f-a8c4-491b-8e8a-586ff3e819e5.png)
+
 # How to use
 
 This project was created in Unity2022.2 
@@ -112,7 +114,7 @@ https://user-images.githubusercontent.com/129722386/231012716-a0de0721-5db4-4993
 
 ![教程2](https://user-images.githubusercontent.com/129722386/231013518-ff62fba1-eb66-4193-9391-5f5f6bb04c91.png)
 
-### All pixels are calculated in the same way, so let's take pixel P for example
+### All pixels are calculated in the same way, let's take pixel P for example
 
 ### Find out P's block
 
@@ -127,9 +129,9 @@ float2 uv;
 uv.x = (P.x - A.x) / (64 - 1);
 uv.y = (P.y - A.y) / (64 - 1);
 ```
-### a, b, c, d is random vector of Vertex A, B, C, D(Green vectors in above picture)
+### a, b, c, d is random vector of Vertex A, B, C, D(green vectors in picture above)
 
-### Calculate 4 dot values
+### Calculate 4 dot products
 
 ```csharp
 float2 AP = P - A;
@@ -161,8 +163,9 @@ float temp1 = PerlinNoiseLerp(dotB, dotC, uv.x);
 float noiseValue = PerlinNoiseLerp(temp0, temp1, uv.y);
 noiseValue = (noiseValue + 1.0) / 2.0;
 ```
+### It's all done!
 
-### Continuity
+# Continuity
 
 ### Take P1 and P2 for example
 
@@ -172,7 +175,7 @@ noiseValue = (noiseValue + 1.0) / 2.0;
 
 ![教程5](https://user-images.githubusercontent.com/129722386/231016877-24e25268-9247-48b4-be30-93421be9af3a.png)
 
-### FBM
+# FBM
 
 ### PerlinNoiseA, frequency = 4
 
