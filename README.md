@@ -10,7 +10,7 @@
 
 # How to use
 
-This project was created in Unity2022.2 
+This project was created in Unity2021.3 
 
 Click Generate to create noise texture
 
@@ -158,7 +158,7 @@ float dotC = dot(CP , c);
 float dotD = dot(DP , d);
 ```
 
-### Use uv coordinates to interpolate them to get perlin noise value
+### Use uv coordinates to interpolate them
 
 ```csharp
 float PerlinNoiseLerp(float l, float r, float t) {
@@ -171,7 +171,7 @@ float temp1 = PerlinNoiseLerp(dotB, dotC, uv.x);
 float noiseValue = PerlinNoiseLerp(temp0, temp1, uv.y);
 noiseValue = (noiseValue + 1.0) / 2.0;
 ```
-### It's all done!
+### It's all done, we have perlin noise value for P!
 
 # Continuity
 
