@@ -39,7 +39,7 @@ Click SaveToDisk to save noise texture to disk
 
   Evolution
 
-Tip: 3D noise texture takes up a lot of memory and GPU resources, resolution should no more than 256 (unless your graphic card is really good)
+Tip: 3D noise texture takes up a lot of memory and GPU resources, resolution should be no more than 256 (unless your graphic card is really good)
 
 # Template
 
