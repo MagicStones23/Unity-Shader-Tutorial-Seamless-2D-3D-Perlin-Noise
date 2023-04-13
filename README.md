@@ -3,9 +3,10 @@
 * [How to use](#how-to-use)
 * [Main parameter](#main-parameter)
 * [Template](#template)
-* [Algorithm](#algorithm)
-* [Continuity](#continuity)
-* [FBM](#fbm)
+* [Tutorial](#unity-shader-tutorial-seamless-2d-3d-perlin-noise)
+  * [Algorithm](#algorithm)
+  * [Continuity](#continuity)
+  * [FBM](#fbm)
 * [My Social Media](#my-social-media)
 
 # How to use
