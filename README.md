@@ -180,7 +180,7 @@ noiseValue = (noiseValue + 1.0) / 2.0;
 
 ![教程4](https://user-images.githubusercontent.com/129722386/231015654-e59d2483-a286-4153-996f-4e5a5efddc65.png)
 
-### UV of P1 is (0, 0.5), uv of P2 is (1, 0.5), noise value of P1 is determined by random vectors of A and B, and noise value of P2 is determined by random vectors of H and G, so as long as thier random vectors are equal, it can connect seamlessly
+### UV of P1 is (0, 0.5), uv of P2 is (1, 0.5), noise value of P1 is determined by random vectors of A and B, and noise value of P2 is determined by random vectors of H and G, so as long as thier random vectors are equal, it will connect seamlessly
 
 ![教程5](https://user-images.githubusercontent.com/129722386/231016877-24e25268-9247-48b4-be30-93421be9af3a.png)
 
